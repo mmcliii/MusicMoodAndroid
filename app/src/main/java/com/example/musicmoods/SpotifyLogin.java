@@ -19,7 +19,7 @@ public class SpotifyLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spotify_login);
+//        setContentView(R.layout.activity_spotify_login);
         final String CLIENT_ID = getResources().getString(R.string.CLIENT_ID);
         final String REDIRECT_URI = getResources().getString(R.string.REDIRECT_URI);
 

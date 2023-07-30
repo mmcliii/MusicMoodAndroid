@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".SpotifyLogout">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="29dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="358dp"
+        android:text="Logged Out"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
