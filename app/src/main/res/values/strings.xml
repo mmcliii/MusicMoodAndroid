@@ -9,7 +9,7 @@
 
     <string name="CLIENT_ID">ad99b1c32a114d4b85f3799103fbd7c7</string>
     <string name="REDIRECT_URI">com.example.musicmoods://callback</string>
-    <string name="shared_pref_key">SpotifyToken</string>
+    <string name="shared_pref_key">Spotify</string>
     <string name="CLIENT_SECRET">d738dfe5c93f4dfd91a9b50ef38da150</string>
     <string name="PACKAGE_NAME">com.example.musicmoods</string>
 

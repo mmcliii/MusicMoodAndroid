@@ -3,9 +3,12 @@ package com.example.musicmoods;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
+import androidx.activity.OnBackPressedCallback;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,19 +16,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MaterialButton loginButton = findViewById(R.id.loginButton);
+        loginButton.setOnClickListener(view -> spotifyLogin());
 
-        MaterialButton python0button = findViewById(R.id.button0python);
-        python0button.setOnClickListener(view -> pythonTest0());
-        MaterialButton logout_button = findViewById(R.id.logout_button);
-        logout_button.setOnClickListener(view -> logout());
+//        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+//            @Override
+//            public void handleOnBackPressed() {
+//                // Back is pressed... Finishing the activity
+//                finish();
+//            }
+//        });
     }
 
-    protected void pythonTest0(){
+    protected void spotifyLogin(){
         Intent secondActivityIntent = new Intent(this, SpotifyLogin.class);
         startActivity(secondActivityIntent);
     }
-    protected void logout(){
-        Intent secondActivityIntent = new Intent(this, SpotifyLogout.class);
-        startActivity(secondActivityIntent);
-    }
+
+
 }

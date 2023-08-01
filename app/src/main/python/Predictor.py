@@ -18,8 +18,8 @@ model_file = join(dirname(__file__), "mlModel_jlib.pkl")
 # with open(model_file, 'r', encoding='ASCII', errors="ignore") as model_in:
 #     model_data = model_in.read()
 
-CLIENT_ID = "9979f20ecbf4411bafc84f236967dd7e"
-CLIENT_SECRET = "16f2c288975747978e884dd4e79d822a"
+CLIENT_ID = "ad99b1c32a114d4b85f3799103fbd7c7"
+CLIENT_SECRET = "d738dfe5c93f4dfd91a9b50ef38da150"
 
 auth_manager = SpotifyClientCredentials(CLIENT_ID, CLIENT_SECRET)
 sp = spotipy.Spotify(auth_manager=auth_manager)
@@ -60,12 +60,12 @@ def my_predict(track_id):
     result = model.predict(X_input)[0]
     emotion = ""
     if(result == 1):
-        emotion = "angry"
+        emotion = "Angry"
     elif(result == 2):
-        emotion = "sad"
+        emotion = "Sad"
     elif(result == 3):
-        emotion = "relaxed"
+        emotion = "Relaxed"
     else:
-        emotion = "happy"
+        emotion = "Happy"
     return emotion
 

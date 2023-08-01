@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpotifyLogout">
+    tools:context=".LauncherActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="29dp"
-        android:layout_height="10dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="358dp"
-        android:text="Logged Out"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dashboard_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="561dp"
+        android:text="Dashboard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
