@@ -12,5 +12,5 @@ Details on how to run the app: https://developer.android.com/studio/run
 
 Can be run on both real and virtual Android devices from Android Studio
 
-### As the app is currently on development mode, user needs to be added to the allowlist of Spotify API by the developer. Please send the email address associated with your Spotify account to the developer before testing
+### As the app is currently on development mode, user needs to be added to the allowlist of this app by the developer due to Spotify API's restrictions. Please send the email address associated with your Spotify account to the developer before testing
 
