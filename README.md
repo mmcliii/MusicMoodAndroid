@@ -10,3 +10,5 @@ Uses a custom machine learning model built using Scikit-Learn
 
 Details on how to run the app: https://developer.android.com/studio/run
 
+Can be run on both real and virtual Android devices from Android Studio
+
