@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".FetchHistory">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome_sleep" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/songHistoryRV"
         android:layout_width="409dp"
@@ -20,9 +28,10 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="62dp"
         android:layout_height="28dp"
-        android:indeterminate="true"
         android:layout_marginStart="169dp"
         android:layout_marginTop="386dp"
+        android:indeterminate="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

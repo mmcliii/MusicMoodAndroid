@@ -11,7 +11,10 @@ import com.google.android.material.button.MaterialButton;
 import androidx.activity.OnBackPressedCallback;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class DashboardActivity extends AppCompatActivity {
 //    ConnectivityManager cm = (ConnectivityManager)getSystemService(this.CONNECTIVITY_SERVICE);
